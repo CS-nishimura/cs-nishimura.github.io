@@ -1,0 +1,31 @@
+@Article{NishimuraOhori:JFP1999,
+  author = 	 {Susumu Nishimura and Atsushi Ohori},
+  title = 	 {Parallel Functional Programming via Data-Parallel Recursion},
+  journal = 	 {Journal of Functional Programming},
+  year = 	 1999,
+  volume =	 9,
+  number =	 4,
+  pages =	 {427--463},
+  publisher =    {{Cambridge} University Press}, 
+  abstract = {
+	This article proposes a new language mechanism for
+	data-parallel processing of dynamically allocated recursively defined
+	data. Different from the conventional array-based data-parallelism,
+	it allows parallel processing of general recursively defined
+	data such as lists or trees in a functional way. 
+	This is achieved by representing a recursively defined datum as
+	a system of equations, and defining new language constructs for
+	parallel transformation of a system of equations.
+	By integrating them with a higher-order functional
+	language, we obtain a functional programming language 
+	suitable for describing data-parallel algorithms 
+	on recursively defined data in a declarative way.
+	The language has an ML style polymorphic type system and a
+	type sound operational semantics that uniformly integrates the
+	parallel evaluation mechanism with the semantics of a typed functional
+	language. We also show the intended parallel execution model 
+	behind the formal semantics, assuming an idealized 
+	distributed memory multicomputer. }
+}
+
+

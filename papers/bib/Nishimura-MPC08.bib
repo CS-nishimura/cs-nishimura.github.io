@@ -1,0 +1,32 @@
+@InProceedings{Nishimura:MPC08,
+  author = 	 {Susumu Nishimura},
+  title = 	 {Safe Modification of Pointer Programs in Refinement Calculus},
+  booktitle = 	 {International Conference on
+Mathematics of Program Construction ({MPC} '08)},
+  pages =	 {284--304},
+  year =	 2008,
+  series =	 {{LNCS}},
+  volume =	 5133,
+  publisher =	 {{Springer} {Verlag}},
+  abstract = {
+This paper discusses stepwise refinement of pointer programs in the
+framework of refinement calculus. We augment the underlying logic with
+formulas of separation logic and then introduce a pair of new
+predicate transformers, called separating assertion and separating
+assumption. The new predicate transformers are derived from separating
+conjunction and separating implication, which are fundamental logical
+connectives in separation logic. They represent primitive forms of
+heap allocation/deallocation operators and the basic pointer
+statements can be specified by means of them. We derive several
+refinement laws that are useful for stepwise refinement and
+demonstrate the use of the laws in the context of correctness
+preserving transformations that are intended for improved memory
+usage.  
+
+The formal development is carried out in the framework of
+higher-order logic and is based on Back and Preoteasa’s
+axiomatization of state space and its extension to the heap storage
+[BP05, Pre06]. All the results have been implemented and verified in
+the theorem prover PVS.
+}
+}

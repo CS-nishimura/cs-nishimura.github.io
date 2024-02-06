@@ -1,0 +1,248 @@
+
+@Article{Nishimura:JSSST95,
+  author = 	 {西村 進},
+  title = 	 {{PDI}アルゴリズム : プログラム差分合成のためのアルゴリズム},
+  journal = 	 {コンピュータソフトウェア},
+  year = 	 1995,
+  volume =	 12,
+  number =	 5,
+  pages =	 {85--99},
+  yomi =         {Susumu Nishimura}
+}
+
+@Article{Nishimura:SCP96,
+  author = 	 {Susumu Nishimura},
+  title = 	 {Integrating Different Versions of Programs 
+                  with Backward and Forward Slices},
+  journal = 	 {Science of Computer Programming},
+  year = 	 1996,
+  volume =	 27,
+  number =	 1,
+  pages =	 {1-35},
+  publisher =	 {{Elsevier}}
+}
+
+@InProceedings{Nishimura:POPL98,
+  author = 	 {Susumu Nishimura},
+  title = 	 {Static Typing for Dynamic Messages},
+  booktitle = 	 {Proceedings of the {25$^{th}$} {ACM} Symposium 
+		  on Principles of Programming Languages},
+  pages =	 {266--278},
+  year =	 1998,
+  address =	 {{New York}},
+  publisher =	 {{ACM} Press},
+  abstract =     {
+ \emph{Dynamic messages} are first-class messages dynamically 
+  bound to program variables.  By dynamic messages, the methods
+  to be invoked can be varied dynamically at run-time, which
+  provides a powerful abstraction mechanism for
+  object-oriented languages.
+  Dynamic messages are critically needed for some programs, but it
+  seems that there has been no proposal of static type systems for
+  dynamic messages. This paper presents a static typing discipline for
+  dynamic messages and formalizes it into a second order polymorphic
+  type system. The type system satisfies the type soundness property
+  and has a principal type inference algorithm. The type system
+  therefore provides a foundation for a statically typed
+  object-oriented language enriched with polymorphic dynamic
+  messages.}
+}
+
+
+@InProceedings{MullerNishimura:ASIAN98,
+  author = 	 {Martin M{\"{u}}ller and Susumu Nishimura},
+  title = 	 {Type Inference for First-Class Messages
+                  with Feature Constraints},
+  booktitle = 	 {Proceedings of the {4$^{th}$}
+		  {ASIAN} Computing Science Conference ({ASIAN}~98)},
+  pages =	 {169-187},
+  year =	 1998,
+  volume =	 1538,
+  series =	 {Lecture Notes in Computer Science}
+}
+
+
+@InProceedings{NishimuraOhori:TPPP95,
+  title = 	"A Calculus for Exploiting Data Parallelism on Recursively Defined Data (Preliminary Report)",
+  author = 	"Nishimura, Susumu and Ohori, Atsushi",
+  volume =	 907,
+  series =	 "{LNCS}",
+  booktitle = 	"International Workshop on Theory and Practice on Parallel Programming",
+  year = 	1995,
+  pages = 	"413--432",
+  publisher = "Springer Verlag"
+}
+
+@Article{Nishimura:FACS97,
+  author = 	 {Susumu Nishimura},
+  title = 	 {Strict Functional Language with Cyclic Recursive Data},
+  journal = 	 {Formal Aspects of Computing},
+  year = 	 1997,
+  volume =	 9,
+  number =	 1,
+  pages =	 {78--97},
+  abstract = {  
+  The paper proposes a strict functional language to program with
+  cyclic recursive data structures. In the language, each recursive
+  datum is represented by a system of equations. Cyclic structures 
+  are naturally expressed by this representation, and the language
+  provides a general mechanism that transforms several such systems of
+  equations into a single new system of equations. An operational
+  semantics and a polymorphic type system for the language are given,
+  and a type soundness proof is sketched. Finally, it is also shown
+  that the language can be implemented in a data-parallel fashion.}
+}
+
+@InProceedings{NishimuraOhoriTajima:OOPSLA96,
+  author = 	{Susumu Nishimura and Atushi Ohori and Keishi Tajima},
+  title = 	{An Equational Object-Oriented Data Model and 
+                 its Data-Parallel Query Language},
+  booktitle = 	{{OOPSLA} '96 Conference Proceedings of 
+                 Object-Oriented Programming Systems, 
+                 Languages, and Applications},
+  year = 	1996,
+  pages =       {1--17},
+  abstract =	{
+	This paper presents an equational formulation of an object-oriented
+	data model. In this model, a database is represented as a {\em
+	system of equations\/} over a set of oid's,
+	and a database query is a transformation of a system of
+	equations into another system of equations.
+	During the query processing, our model maintains an {\em equivalence
+	relation\/} over oid's that relates oid's corresponding to the
+	same ``real-world entity.'' By this mechanism, the model achieves a
+	declarative set-based query language and views for objects with
+	identity. Moreover, the query primitives are designed so that
+	queries including object traversal can be evaluated in a data-parallel
+	fashion.}
+}
+
+@Article{NishimuraOhori:JFP1999,
+  author = 	 {Susumu Nishimura and Atsushi Ohori},
+  title = 	 {Parallel Functional Programming via Data-Parallel Recursion},
+  journal = 	 {Journal of Functional Programming},
+  year = 	 1999,
+  volume =	 9,
+  number =	 4,
+  pages =	 {427--463},
+  publisher =    {{Cambridge} University Press}, 
+  abstract = {
+	This article proposes a new language mechanism for
+	data-parallel processing of dynamically allocated recursively defined
+	data. Different from the conventional array-based data-parallelism,
+	it allows parallel processing of general recursively defined
+	data such as lists or trees in a functional way. 
+	This is achieved by representing a recursively defined datum as
+	a system of equations, and defining new language constructs for
+	parallel transformation of a system of equations.
+	By integrating them with a higher-order functional
+	language, we obtain a functional programming language 
+	suitable for describing data-parallel algorithms 
+	on recursively defined data in a declarative way.
+	The language has an ML style polymorphic type system and a
+	type sound operational semantics that uniformly integrates the
+	parallel evaluation mechanism with the semantics of a typed functional
+	language. We also show the intended parallel execution model 
+	behind the formal semantics, assuming an idealized 
+	distributed memory multicomputer. }
+}
+
+
+@Book{OhoriGarrigueNishimura:Textbook99,
+  author =	 {大堀 淳 and ジャック ガリグ and 西村 進},
+  title = 	 {コンピュータサイエンス入門 アルゴリズムとプログラミング言語},
+  publisher = 	 {岩波書店},
+  year = 	 1999
+}
+
+@Article{MullerNishimura:IJFCS00,
+  author = 	 {Martin M{\"{u}}ller and Susumu Nishimura},
+  title = 	 {Type Inference for First-Class Messages
+                  with Feature Constraints},
+  journal = 	 {International Journal of Foundations of Computer Science},
+  year = 	 2000,
+  volume =	 11,
+  number =	 1,
+  pages =	 {29--63},
+  abstract =     {
+  We present a constraint system, OF, of feature trees that is
+  appropriate to specify and implement type inference for first-class
+  messages. OF extends traditional systems of feature constraints by a
+  selection constraint $x\langle y\rangle z$, ``by first-class feature
+  tree'' $y$, which is in contrast to the standard selection
+  constraint $x[f]y$, ``by fixed feature''~$f$.  We
+  investigate the satisfiability problem of OF and show that it can be
+  solved in polynomial time, and even in quadratic time if the number
+  of features is bounded. We compare OF with Treinen's system EF of
+  feature constraints with first-class features, which has an
+  NP-complete satisfiability problem. This comparison yields that the
+  satisfiability problem for OF with negation is NP-hard.  We even
+  obtain NP-completeness, for a specific subclass of OF with negation
+  that is useful for a related type inference problem.  Based
+  on OF we give a simple account of type inference for first-class
+  messages in the spirit of Nishimura's recent proposal, and we show
+  that it has polynomial time complexity: We also highlight an
+  immediate extension of this type system that is desirable but makes
+  type inference NP-complete.}
+}
+
+@Article{Nishimura:JSSST01,
+  author = 	 {西村 進},
+  yomi =	 {にしむら すすむ},
+  title = 	 {制約によるパラメータ多相型推論},
+  journal = 	 {コンピュータソフトウェア},
+  year = 	 2001,
+  volume =	 18,
+  number =	 2,
+  pages =	 {20--39}
+}
+
+@InProceedings{NakanoNishimura:LDTA01,
+  author = 	 {Keisuke Nakano and Susumu Nishimura},
+  title = 	 {Deriving Event-Based Document Transformers from Tree-Based Specifications},
+  booktitle = 	 {{LDTA'2001} Workshop on Language Descriptions, Tools and Applications},
+  year =	 2001,
+  volume =	 44,
+  number =	 2,
+  series =	 {Electronic Notes in Theoretical Computer Science},
+  publisher =	 {{Elsevier} Science},
+  abstract =	 {
+  Structured documents are usually processed
+  by tree-based document transformers, which transform
+  the document tree representing the structure of the input document
+  into another tree structure. 
+  \emph{Event-based document transformers}, by contrast, 
+  recognize the input as a
+  stream of parsing events, i.e. lexical tokens, 
+  and process the events one by one in an event-driven manner. 
+  Event-based document transformers have advantages that
+  they need less memory space and that they are more tolerant of
+  large inputs, compared to tree-based transformers, which
+  construct the intermediate tree representation. 
+
+  This paper proposes an algorithm which derives
+  an event-based transformer from a given
+  specification of a document transformation over a tree structure.
+  The derivation of an event-based transformer
+  is carried out in the framework of attribute
+  grammars. We first obtain an attribute grammar
+  which processes a stream of parsing events,
+  by applying a deforestation method; We then
+  derive an attribute evaluation scheme 
+  relevant to the event-based transformation.
+  Using this algorithm, one can develop event-based document transformers 
+  in a more declarative style 
+  than directly programming over the stream of parsing events. }
+}
+
+@Article{NakanoNishimura:JSSST02,
+  author = 	 {中野圭介 and 西村 進},
+  yomi =	 {にしむら すすむ},
+  title = 	 {イベント駆動型文書変換器の自動生成},
+  journal = 	 {コンピュータソフトウェア},
+  year = 	 2002,
+  volume =	 19,
+  number =	 4,
+  pages =	 {45--51}
+}
+

@@ -1,0 +1,38 @@
+@inproceedings{IkedaNishimura:PEPM11,
+ author = {Yuta Ikeda and Susumu Nishimura},
+ title = {Calculating Tree Navigation with Symmetric Relational Zipper},
+ booktitle = {Proceedings of the 20th {ACM} {SIGPLAN} 2011 Workshop on
+  Partial Evaluation and Program Manipulation ({PEPM}'11)},
+ pages = {101--110},
+ year = {2011},
+ location = {{Austin}, {Texas}, {USA}},
+ publisher = {{ACM} Press},
+ abstract = {
+Navigating through tree structures is a core operation in tree
+processing programs. Most notably, XML processing programs
+intensively use XPath, the path specification language that
+locates particular nodes in a given document structure.
+
+This paper develops a theory for reasoning about equalities of
+tree navigation programs.  In functional programming languages,
+tree navigation operations can be cleanly implemented as
+functions operating over the data structure known as Huet's
+zipper.  The tree navigation functions are expected to have
+certain nice symmetric properties
+(e.g., a function going one-level down in the tree structure
+would be the inverse of another function coming back the other
+way around, and vice versa), but they are not indeed a perfect
+symmetry, due to partiality and non-injectivity of the functions.
+
+In order to fully exploit the symmetry indicated by tree
+navigation operations, we model them by relations, instead of
+functions.  The relational specification allows us to derive
+useful equations by simple calculations.  We apply the
+calculational method to derive certain equalities of XPath
+expressions.  The point-free relational reasoning not only leads
+to a concise justification of some known results but also
+establishes equations for a larger class of tree navigation
+operations, including those specified with negative constraints
+and those beyond XPath expressibility.}
+ }
+

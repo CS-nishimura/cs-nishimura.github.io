@@ -1,0 +1,31 @@
+@Article{NishimuraNakano:SCP05,
+  author = 	 {Susumu Nishimura and Keisuke Nakano},
+  title = 	 {{XML} Stream Transformer Generation Through Program Composition and Dependency Analysis},
+  journal = 	 {Science of Computer Programming},
+  year = 	 2005,
+  volume =	 54,
+  number =	 {2--3},
+  pages =	 {257--290},
+  publisher =	 {{Elsevier}},
+  abstract =	 {
+XML stream transformation, which sequentially processes the input XML
+data on the fly, makes it possible to process a large sized data
+within a limited amount of memory. Though being efficient in
+memory-use, stream transformation requires stateful programming, which
+is error-prone and hard to manage.
+
+This paper proposes a scheme for generating XML stream transformers.
+Given an attribute grammar definition of transformation over XML tree
+structure, we systematically derive a stream transformer in two steps.
+First, an attribute grammar definition of the XML stream
+transformation is inferred by applying a program composition method.
+Second, a finite state transition machine is constructed through a
+dependency analysis.  Due to the closure property of the program
+composition method, our scheme also allows modular construction of XML
+stream transformers.
+
+We have implemented a prototype XML stream transformer generator,
+called altSAX. The experimental results show that the generated
+transformers are efficient in memory consumption as well as in
+execution time. }
+}

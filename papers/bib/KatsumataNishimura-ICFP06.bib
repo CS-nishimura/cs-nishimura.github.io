@@ -1,0 +1,33 @@
+@inproceedings{KatsumataNishimura:ICFP06,
+ author = {Shin-ya Katsumata and Susumu Nishimura},
+ title = {Algebraic fusion of functions with an accumulating parameter and its improvement},
+ booktitle = {{ICFP} '06: Proceedings of the 11th {ACM} {SIGPLAN} International Conference on Functional Programming},
+ year = {2006},
+ isbn = {1-59593-309-3},
+ pages = {227--238},
+ location = {{Portland}, {Oregon}, {USA}},
+ doi = {http://doi.acm.org/10.1145/1159803.1159835},
+ publisher = {{ACM} Press},
+ address = {New York, {NY}, {USA}},
+ abstract = {We present a unifying solution to the problem of fusion
+ of functions, where both the producer function and the consumer
+ function have one accumulating parameter. The key idea in this
+ development is to formulate the producer function as a function which
+ computes over a monoid of data contexts. Upon this formulation, we
+ develop a fusion method called algebraic fusion based on the
+ elementary theory of universal algebra and monoids. The producer
+ function is fused with a monoid homomorphism that is derived from the
+ definition of the consumer function, and is turned into a
+ higher-order function f that computes over the monoid of
+ endofunctions.We then introduce a general concept called improvement,
+ in order to reduce the cost of computing over the monoid of
+ endofunctions (i.e., function closures). An improvement of the
+ function f via a monoid homomorphism h is a function g that satisfies
+ f =h g. This provides a principled way of finding a first-order
+ function representing a solution to the fusion problem. It also
+ presents a clean and unifying account for varying fusion methods that
+ have been proposed so far. Furthermore, we show that our method
+ extends to support partial and infinite data structures, by means of
+ an appropriate monoid structure.}
+ }
+

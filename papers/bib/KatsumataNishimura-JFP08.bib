@@ -1,0 +1,42 @@
+@Article{,
+  author = {Shin-ya Katsumata and Susumu Nishimura},
+  title = {Algebraic fusion of functions with an accumulating parameter and its improvement},
+  journal = 	 {Journal of Functional Programming},
+  year = 	 2008,
+  volume = 	 18,
+  number = 	 {5--6},
+  pages = 	 {781--819},
+  publisher =	 {{Cambridge} University Press},
+  doi = {http://dx.doi.org/10.1017/S095679680800693X},
+  abstract = {
+  This paper develops a new framework for fusion that is designed for
+  eliminating the intermediate data structures involved in the
+  composition of functions that have one accumulating parameter. The new
+  fusion framework comprises two steps: algebraic fusion and its
+  subsequent improvement process. The key idea in our development is to
+  regard functions with an accumulating parameter as functions that
+  operate over the monoid of data contexts.  Algebraic fusion composes
+  each such function with a monoid homomorphism that is derived from the
+  definition of the consumer function to obtain a higher-order function
+  that computes over the monoid of endofunctions. The transformation
+  result may be further refined by an improvement process, which
+  replaces the operation over the monoid of endofunctions (i.e.,
+  function closures) with another monoid operation over a monoid
+  structure other than function closures.
+
+  Using our framework, one can formulate a particular solution to the
+  fusion problem by devising appropriate monoids and monoid
+  homomorphisms. This provides a unified exposition of a variety of
+  fusion methods that have been developed so far in different
+  formalisms.  Furthermore, the cleaner formulation makes it possible to
+  argue about some delicate issues on a firm mathematical basis. We
+  demonstrate that algebraic fusion and improvement in the world of
+  complete pointed partial orders (CPOs) and continuous functions can
+  correctly fuse functions that operate on partial and infinite data
+  structures. We also show that subtle differences in termination
+  behaviours of transformed programmes caused by certain different
+  fusion methods can be cleanly explained by corresponding improvement
+  processes that have different underlying monoid structures.
+  }
+ }
+

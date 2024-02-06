@@ -1,0 +1,38 @@
+@InProceedings{NakanoNishimura:LDTA01,
+  author = 	 {Keisuke Nakano and Susumu Nishimura},
+  title = 	 {Deriving Event-Based Document Transformers from Tree-Based Specifications},
+  booktitle = 	 {{LDTA'2001} Workshop on Language Descriptions, Tools and Applications},
+  year =	 2001,
+  volume =	 44,
+  number =	 2,
+  series =	 {Electronic Notes in Theoretical Computer Science},
+  publisher =	 {{Elsevier} Science},
+  abstract =	 {
+  Structured documents are usually processed
+  by tree-based document transformers, which transform
+  the document tree representing the structure of the input document
+  into another tree structure. 
+  \emph{Event-based document transformers}, by contrast, 
+  recognize the input as a
+  stream of parsing events, i.e. lexical tokens, 
+  and process the events one by one in an event-driven manner. 
+  Event-based document transformers have advantages that
+  they need less memory space and that they are more tolerant of
+  large inputs, compared to tree-based transformers, which
+  construct the intermediate tree representation. 
+
+  This paper proposes an algorithm which derives
+  an event-based transformer from a given
+  specification of a document transformation over a tree structure.
+  The derivation of an event-based transformer
+  is carried out in the framework of attribute
+  grammars. We first obtain an attribute grammar
+  which processes a stream of parsing events,
+  by applying a deforestation method; We then
+  derive an attribute evaluation scheme 
+  relevant to the event-based transformation.
+  Using this algorithm, one can develop event-based document transformers 
+  in a more declarative style 
+  than directly programming over the stream of parsing events. }
+}
+
